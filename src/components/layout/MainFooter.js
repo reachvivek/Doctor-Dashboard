@@ -46,19 +46,19 @@ MainFooter.defaultProps = {
       to: "#"
     },
     {
-      title: "Services",
+      title: "About Us",
       to: "#"
     },
     {
-      title: "About",
+      title: "Microsoft Azure",
       to: "#"
     },
     {
-      title: "Products",
+      title: "Serverless",
       to: "#"
     },
     {
-      title: "Blog",
+      title: "Hire Us?",
       to: "#"
     }
   ]
