@@ -74,8 +74,3 @@ Fork this repo and import it to Vercel and there you go!!
 	
 ## Team Name: Chikitsak
 ![](Team.png)
-
-<p align="center"><strong>Reach out to me at vs1913@srmist.edu.in or rogerthatvivek@gmail.com for any queries</strong></p>
-
-
-
