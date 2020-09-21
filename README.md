@@ -1,72 +1,81 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"><img src="https://github.com/reachvivek/Doctor-Dashboard/blob/master/src/images/logos/stethoscope.svg" width="200" height="200"></p>
 
-## Available Scripts
+<h1 align="center">CHIKITSAK </br>#Microsoft Azure Champions League'20 (Hack-1) </H1>
+<p align="center">
+   <a target="_blank" href="https://www.hackerearth.com/challenges/hackathon/microsoft-azure-champions-league-hack-1/">
+        <img src="https://img.shields.io/badge/Challenge-HackerEarth-green.svg?style=for-the-badge&logo=hackerearth" />
+   </a>
+</p>
+
+<h1 align="center">About</H1>
+
+Chikitsak has been made to scale up the existing telemedicine and Patient MIS in rural areas using Azure Services and Serverless Architecture to provide a cost-economic one stop solution which is dependable and truly secure. The objective is to give the citizens a **Live Doctor Interface** which has a **serverless architecture** and can be remotely accessed irrespective of geographic location. 
+
+> **Note:** This is ```Not An Open Source Project``` and is intended to be shared only with ```HackerEarth Officials``` & respective organizers of ```#Microsoft Azure Champions League``` for Validation of my Idea Subission and Evaluation Purposes. Please check this link below to better understand the license agreement of this repository: <a target="_blank" href="https://choosealicense.com/no-permission/">
+          <p align="center"> <strong>About Proprietary Code & Repository | GitHub</strong> </p> </a> 
+          
+![](Banner.png)
+![](Preview.png)
+
+## Features 💬
+1. Once user installs Chikitsak on his phone, he can schedule a test, communicate with a doctor, request appointment and view all his previous data in a cost effective way.
+
+2. Chikitsak has a serverless architecture:
+
+     * Our prime focus is on user's **cost** and **privacy**. The passwords are securely stored without the intervention of any third-party applications and this **prevents dataleaks** from occuring.
+     * It is highly **reliable**.
+     * Requires **very low maintenance**.
+     * It is **highly scalable** - if many people want to use the same account to store different family user's data.
+
+3. Doesn't require any subscription:
+
+    * It is available **free** of cost for students/people having Azure Student account.
+    * For rest of the users, there is **minimal payment** for Azure account which is equivalent to a meal from one of your favourite burger joints.
+
+## Getting Started
+
+### There are two facets of this solution
+* Doctor Side - Dashboard (React)
+* Patient Side - Mobile App (Flutter)
+
+#### Azure Services Used 🔍
+* DevOps
+* Active Directory (A2D)
+* Blob Storage
+* Cosmos DB
+* API Management
+* Functions
+* Monitor
+
+## High Level Design 📜  
+![](Chikitsak.png)
+
+## Steps 
+## 1. Deploying Doctor's Dashboard - (React App)
+Clone this Dashboard to your workspace. 
+
+`$ git clone https://github.com/reachvivek/Doctor-Dashboard`
+
+## Running Locally and Testing
+To build and run from a packaged jar locally:
+```
+`npm install`
+`npm start`
+```
+
+If you navigate to `http://localhost:3000/` you will be navigated to `/dashboard` Kudos! 👍
 
 
-How to Setup?
-### `npm install`
+## Deploying with Vercel
+To deploy this with Vercel
+```
+Fork this repo and import it to Vercel and there you go!!
+```
+	
+## Team Name: Chikitsak
+![](Team.png)
 
-In the project directory, you can run:
+<p align="center"><strong>Reach out to me at vs1913@srmist.edu.in or rogerthatvivek@gmail.com for any queries</strong></p>
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
