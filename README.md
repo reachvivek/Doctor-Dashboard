@@ -47,7 +47,8 @@ Chikitsak has been made to scale up the existing telemedicine and Patient MIS in
 * Functions
 * Monitor
 
-## High Level Design 📜  [Click here](HLD.md)
+## High Level Design 📜  
+![](Chikitsak.png)
 
 ## Steps 
 ## 1. Deploying Doctor's Dashboard - (React App)
@@ -62,13 +63,13 @@ To build and run from a packaged jar locally:
 `npm start`
 ```
 
-If you navigate to `http://localhost:3000/ you will be navigated to /dashboard. Kudos! 👍
+If you navigate to `http://localhost:3000/` you will be navigated to `/dashboard` Kudos! 👍
 
 
 ## Deploying with Vercel
 To deploy this with Vercel
 ```
-Fork this repo and import it to Vercel
+Fork this repo and import it to Vercel and there you go!!
 ```
 	
 ## Team Name: Chikitsak
