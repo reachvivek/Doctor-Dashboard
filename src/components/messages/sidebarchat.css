@@ -1,0 +1,35 @@
+.sidebarChat {
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.header__sidebarChat {
+    font-size: 16px;
+    font-family: 'Times New Roman';
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+
+.lasttext__sidebarChat {
+    font-size: 14px;
+    font-family: 'monospace';
+    margin: 0;
+    padding: 0;
+}
+
+.sidebarChat:hover {
+    background-color: #ebebeb;
+}
+
+.sidebarChat__info > .header__sidebarChat {
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.sidebarChat__info {
+    margin-left: 15px;
+}
+
