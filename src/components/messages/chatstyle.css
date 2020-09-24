@@ -22,7 +22,9 @@
 .chat__header {
     padding: 20px;
     display: flex;
+    background-color: #fafbfb;
     align-items: center;
+    border-radius: 20px;
     border-bottom: 1px solid lightgray;
 }
 
@@ -33,5 +35,32 @@
 
 .chat__body{
     flex:1;
-    background-image: ;
+    background-color: #fafbfb;
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    overflow: scroll;
+    border-radius: 20px;
+}
+
+.chat__message {
+    position: relative;
+    font-size: 14px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    background-color: #fdfcdc;
+    margin-bottom: 30px;
+}
+
+.chat__timestamp {
+    margin-left: 10px;
+    font-size: xx-small;
+}
+
+.chat__name {
+    position: absolute;
+    top:-15px;
+    font-weight: 800;
+    font-size: xx-small;
 }

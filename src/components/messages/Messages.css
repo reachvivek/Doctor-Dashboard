@@ -6,8 +6,9 @@
 
 .app__body {
     display: flex;
-    background-color: #ededed;
+    background-color: #fbfbfb;
     margin-top: -50px;
     height: 70vh;
     width: 80vw;
+    border-radius: 20px;
 }

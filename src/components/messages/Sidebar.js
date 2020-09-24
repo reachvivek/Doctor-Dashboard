@@ -2,7 +2,7 @@ import React from 'react';
 import "./sidestyle.css";
 import SidebarChat from "./SidebarChat";
 import {IconButton} from "@material-ui/core";
-import {Settings, Duo, MoreVert, SearchOutlined} from "@material-ui/icons/";
+import {Settings, Duo, SearchOutlined, Mic} from "@material-ui/icons/";
 
 function Sidebar() {
     return (
@@ -16,7 +16,7 @@ function Sidebar() {
                         <Duo/>
                     </IconButton>
                     <IconButton>
-                        <MoreVert/>
+                        <Mic/>
                     </IconButton>
                 </div>
             </div>
