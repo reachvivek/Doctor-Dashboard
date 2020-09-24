@@ -2,13 +2,12 @@
     display: flex;
     padding: 20px;
     cursor: pointer;
-    border-radius: 20px;
     border-bottom: 1px solid #fbfbfb;
 }
 
 .header__sidebarChat {
     font-size: 16px;
-    font-family: 'Times New Roman';
+    font-family: sans-serif;
     font-weight: 900;
     margin: 0;
     padding: 0;
@@ -16,7 +15,7 @@
 
 .lasttext__sidebarChat {
     font-size: 14px;
-    font-family: 'monospace';
+    font-family: sans-serif;
     margin: 0;
     padding: 0;
 }

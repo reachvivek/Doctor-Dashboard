@@ -1,5 +1,5 @@
 import { Avatar, IconButton } from '@material-ui/core';
-import { AttachFile, MoreVert, SearchOutlined } from '@material-ui/icons';
+import { AttachFile, InsertEmoticon, Mic, MoreVert, SearchOutlined, VideoCall} from '@material-ui/icons';
 import React from 'react';
 import "./chatstyle.css";
 
@@ -21,6 +21,9 @@ function Chat() {
                         <AttachFile/>
                     </IconButton>
                     <IconButton>
+                        <VideoCall/>
+                    </IconButton>
+                    <IconButton>
                         <MoreVert/>
                     </IconButton>
                 </div>
@@ -28,12 +31,143 @@ function Chat() {
 
             <div className="chat__body">
                 <p className="chat__message">
-                    <span className="chat__name">Akshith</span>
+                    <span className="chat__name">Shiva</span>
                     This is a message from the Patient
                     <span className="chat__timestamp">{
                     new Date().toUTCString()}
                     </span>
                     </p>
+
+                    <p className="chat__message chat__receiver">
+                    <span className="chat__name">You</span>
+                    Hi,Shiva. How does it look now?
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message">
+                    <span className="chat__name">Shiva</span>
+                    This is a message from the Patient
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message">
+                    <span className="chat__name">Shiva</span>
+                    This is a message from the Patient
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message chat__receiver">
+                    <span className="chat__name">You</span>
+                    Hi,Shiva. How does it look now?
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message chat__receiver">
+                    <span className="chat__name">You</span>
+                    Hi,Shiva. How does it look now?
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message">
+                    <span className="chat__name">Shiva</span>
+                    This is a message from the Patient
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message">
+                    <span className="chat__name">Shiva</span>
+                    This is a message from the Patient
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message">
+                    <span className="chat__name">Shiva</span>
+                    This is a message from the Patient
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message">
+                    <span className="chat__name">Shiva</span>
+                    This is a message from the Patient
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message chat__receiver">
+                    <span className="chat__name">You</span>
+                    Hi,Shiva. How does it look now?
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message">
+                    <span className="chat__name">Shiva</span>
+                    This is a message from the Patient
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message">
+                    <span className="chat__name">Shiva</span>
+                    This is a message from the Patient
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message">
+                    <span className="chat__name">Shiva</span>
+                    This is a message from the Patient
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message">
+                    <span className="chat__name">Shiva</span>
+                    This is a message from the Patient
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>
+
+                    <p className="chat__message chat__receiver">
+                    <span className="chat__name">You</span>
+                    Hi,Shiva. How does it look now?
+                    <span className="chat__timestamp">{
+                    new Date().toUTCString()}
+                    </span>
+                    </p>  
+            </div>
+
+            <div className="chat__footer">
+                <InsertEmoticon/>
+                <form>
+                    <input placeholder="Type a message"
+                    type="text"
+                    />
+                    <button type="submit">Send a message</button>
+                </form>
+                <Mic/>
             </div>
         </div>
     )
