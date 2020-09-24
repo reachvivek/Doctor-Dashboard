@@ -25,6 +25,8 @@
     background-color: #fafbfb;
     align-items: center;
     border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-radius: 10px;
 }
 
 .chat__headerInfo {
