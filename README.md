@@ -16,6 +16,9 @@ Chikitsak has been made to scale up the existing telemedicine and Patient MIS in
           
 ![](Banner.png)
 ![](Preview.png)
+![](dashboard.png)
+![](chat.png)
+![](profile.png)
 
 ## Features 💬
 1. Once user installs Chikitsak on his phone, he can schedule a test, communicate with a doctor, request appointment and view all his previous data in a cost effective way.
