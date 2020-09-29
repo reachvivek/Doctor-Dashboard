@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col } from "shards-react";
 
 import PageTitle from "../components/common/PageTitle";
-import PatientDetails from "../components/patient-profile/PatientDetails";
 import Akshith from "../components/patient-profile/Akshith";
 import Shiva from "../components/patient-profile/Shiva";
 import Harshita from "../components/patient-profile/Harshita";
