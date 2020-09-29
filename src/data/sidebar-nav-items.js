@@ -7,6 +7,11 @@ export default function() {
       htmlAfter: ""
     },
     {
+      title: "My Patients",
+      htmlBefore: '<i class="material-icons">person</i>',
+      to: "/mypatients",
+    },
+    {
       title: "Messages",
       htmlBefore: '<i class="material-icons">chat</i>',
       to: "/messages",

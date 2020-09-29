@@ -8,6 +8,7 @@ import { DefaultLayout } from "./layouts";
 import Dashboard from "./views/Dashboard";
 import UserProfileLite from "./views/UserProfileLite";
 import Messages from "./views/Messages";
+import MyPatients from "./views/MyPatients";
 
 export default [
   {
@@ -20,6 +21,11 @@ export default [
     path: "/dashboard",
     layout: DefaultLayout,
     component: Dashboard
+  },
+  {
+    path: "/mypatients",
+    layout: DefaultLayout,
+    component: MyPatients
   },
   {
     path: "/messages",
