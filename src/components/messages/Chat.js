@@ -1,31 +1,61 @@
 import { Avatar, IconButton } from '@material-ui/core';
 import { AttachFile, InsertEmoticon, Mic, MoreVert, SearchOutlined, VideoCall} from '@material-ui/icons';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./chatstyle.css";
-import axios from '../../axios';
+import { useParams } from 'react-router-dom';
+import db from '../../firebase';
+import { useStateValue } from '../../StateProvider';
+import firebase from "firebase";
 
-function Chat({messages}) {
+function Chat() {
 
         const [input, setInput] = useState("");
+        const {patientId} = useParams();
+        const [patient, setPatients] = useState("")
+        const [avatar, setAvatar] = useState("")
+        const [messages, setMessages] = useState([])
+        const [{user}, dispatch] = useStateValue()
+
+        useEffect(() => {
+            if (patientId) {
+                db.collection('patients').doc(patientId).onSnapshot(snapshot => (setPatients(snapshot.data().name)));
+                db.collection('patients').doc(patientId).onSnapshot(snapshot => (setAvatar(snapshot.data().avatar)));
+                db.collection('patients').doc(patientId).collection("messages").orderBy("timestamp", "asc").onSnapshot(snapshot => 
+                    (setMessages(snapshot.docs.map(doc=> doc.data()))
+                    ))
+            }
+        }, [patientId])
+
+
         const sendMessage = (e) => {
         e.preventDefault();
 
-        axios.post('/messages/new', {
-            message:input,
-            name:"Akshith",
-            timestamp:"Just now",
-            received: true,
+        db.collection('patients').doc(patientId).collection('messages').add({
+            message: input,
+            name: user?.displayName,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
         })
+
+        // axios.post('/messages/new', {
+        //     message:input,
+        //     name:"Akshith",
+        //     timestamp:"Just now",
+        //     received: true,
+        // })
         setInput("");
     };
 
     return (
         <div className="chat">
             <div className="chat__header">
-                <Avatar/>
+                <Avatar src={avatar}/>
                 <div className="chat__headerInfo">
-                    <p className="header__patientName">Patient Name</p>
-                    <p className="header__lastSeen">Last seen at...</p>
+                    <p className="header__patientName">{patient}</p>
+                    <p className="header__lastSeen">Last seen {" "}
+                    {new Date(
+                        messages[messages.length - 1]?.
+                        timestamp?.toDate()).toUTCString()}
+                    </p>
                 </div>
 
                 <div className="chat__headerRight">
@@ -46,10 +76,10 @@ function Chat({messages}) {
 
             <div className="chat__body">
                 {messages.map((message) => (
-                    <p className={`chat__message ${message.received && "chat__receiver"}`}>
+                    <p className={`chat__message ${message.name === user.displayName && "chat__receiver"}`}>
                         <span className="chat__name">{message.name}</span>
                         {message.message}
-                        <span className="chat__timestamp">{message.timestamp}
+                        <span className="chat__timestamp">{new Date(message.timestamp?.toDate()).toUTCString()}
                         </span>
                         </p>
                 ))}                    

@@ -6,6 +6,7 @@ import PageTitle from "../components/common/PageTitle";
 import "../components/messages/Messages.css";
 import Pusher from 'pusher-js';
 import axios from "../axios";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 
 
 const Messages = () => 
@@ -48,8 +49,17 @@ return (
     {/* Chat UI */}
     <div className="app">
         <div className="app__body">
-            <Sidebar/>
-            <Chat messages={messages}/>
+            <Router>
+              <Sidebar/>                
+                <Switch>
+                <Route path = "/messages/:patientId">  
+                  <Chat/>
+                </Route>
+                <Route path = "/">
+                  <Chat/>
+                </Route>
+              </Switch>
+            </Router>
         </div>
     </div>
 

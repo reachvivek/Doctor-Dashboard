@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import {
   Dropdown,
@@ -10,35 +10,35 @@ import {
   NavLink
 } from "shards-react";
 
-export default class UserActions extends React.Component {
-  constructor(props) {
-    super(props);
+import { useStateValue } from "../../../../StateProvider";
 
-    this.state = {
-      visible: false
-    };
+export default function UserActions (props) {
+  
+  const [visible, setVisible] = useState([])
 
-    this.toggleUserActions = this.toggleUserActions.bind(this);
+  const toggleUserActions = e => {
+    if(!setVisible) {
+      setVisible(visible);
+    }
+    if(setVisible) {
+      setVisible(!visible);
+    }
   }
 
-  toggleUserActions() {
-    this.setState({
-      visible: !this.state.visible
-    });
-  }
 
-  render() {
+    const [{user}] = useStateValue();
+
     return (
-      <NavItem tag={Dropdown} caret toggle={this.toggleUserActions}>
+      <NavItem tag={Dropdown} caret toggle={toggleUserActions}>
         <DropdownToggle caret tag={NavLink} className="text-nowrap px-3">
           <img
             className="user-avatar rounded-circle mr-2"
-            src={require("./../../../../images/avatars/vivek.jpg")}
+            src={user?.photoURL}
             alt="User Avatar"
           />{" "}
-          <span className="d-none d-md-inline-block">Vivek Kumar Singh</span>
+          <span className="d-none d-md-inline-block">{user?.displayName}</span>
         </DropdownToggle>
-        <Collapse tag={DropdownMenu} right small open={this.state.visible}>
+        <Collapse tag={DropdownMenu} right small open={!visible}>
           <DropdownItem tag={Link} to="user-profile">
             <i className="material-icons">&#xE8B8;</i> Edit Profile
           </DropdownItem>
@@ -56,4 +56,3 @@ export default class UserActions extends React.Component {
       </NavItem>
     );
   }
-}

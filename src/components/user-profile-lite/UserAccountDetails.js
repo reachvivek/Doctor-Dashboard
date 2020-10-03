@@ -14,8 +14,13 @@ import {
   FormTextarea,
   Button
 } from "shards-react";
+import { useStateValue } from "../../StateProvider";
 
-const UserAccountDetails = ({ title }) => (
+const UserAccountDetails = ({ title }) => {
+  
+  const [{user}] = useStateValue();
+
+  return(
   <Card small className="mb-4">
     <CardHeader className="border-bottom">
       <h6 className="m-0">{title}</h6>
@@ -32,7 +37,7 @@ const UserAccountDetails = ({ title }) => (
                   <FormInput
                     id="feFirstName"
                     placeholder="First Name"
-                    value="Vivek"
+                    value={user?.displayName.split(' ').slice(0, -1).join(' ')}
                     onChange={() => {}}
                   />
                 </Col>
@@ -42,7 +47,7 @@ const UserAccountDetails = ({ title }) => (
                   <FormInput
                     id="feLastName"
                     placeholder="Last Name"
-                    value="Singh"
+                    value={user?.displayName.split(' ').slice(-1).join(' ')}
                     onChange={() => {}}
                   />
                 </Col>
@@ -55,7 +60,7 @@ const UserAccountDetails = ({ title }) => (
                     type="email"
                     id="feEmail"
                     placeholder="Email Address"
-                    value="rogerthatvivek@gmail.com"
+                    value={user?.email}
                     onChange={() => {}}
                     autoComplete="email"
                   />
@@ -78,7 +83,7 @@ const UserAccountDetails = ({ title }) => (
                 <FormInput
                   id="feAddress"
                   placeholder="Address"
-                  value="Mannar 1st Street, Vadapalani,"
+                  value="Add Your Work Address Here"
                   onChange={() => {}}
                 />
               </FormGroup>
@@ -88,7 +93,7 @@ const UserAccountDetails = ({ title }) => (
                   <label htmlFor="feCity">City</label>
                   <FormInput
                     id="feCity"
-                    placeholder="Chennai"
+                    placeholder="Add Your City Here"
                     onChange={() => {}}
                   />
                 </Col>
@@ -96,9 +101,12 @@ const UserAccountDetails = ({ title }) => (
                 <Col md="4" className="form-group">
                   <label htmlFor="feInputState">State</label>
                   <FormSelect id="feInputState">
-                    <option>Tamil Nadu</option>
                     <option>Andhra Pradesh</option>
                     <option>Jharkhand</option>
+                    <option>Karnataka</option>
+                    <option>Maharashtra</option>
+                    <option>Tamil Nadu</option>
+                    <option>West Bengal</option>
                   </FormSelect>
                 </Col>
                 {/* Zip Code */}
@@ -106,7 +114,7 @@ const UserAccountDetails = ({ title }) => (
                   <label htmlFor="feZipCode">Zip</label>
                   <FormInput
                     id="feZipCode"
-                    placeholder="600026"
+                    placeholder="Your Pin Code"
                     onChange={() => {}}
                   />
                 </Col>
@@ -125,7 +133,8 @@ const UserAccountDetails = ({ title }) => (
       </ListGroupItem>
     </ListGroup>
   </Card>
-);
+  )
+};
 
 UserAccountDetails.propTypes = {
   /**

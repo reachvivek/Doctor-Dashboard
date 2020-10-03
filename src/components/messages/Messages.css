@@ -4,6 +4,12 @@
     height: 80vh;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
 .app__body {
     display: flex;
     background-color: #fbfbfb;
