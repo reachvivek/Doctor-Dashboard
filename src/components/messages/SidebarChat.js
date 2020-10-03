@@ -15,7 +15,7 @@ function SidebarChat({id, name, avatar, addPatient}) {
             .collection("messages")
             .orderBy("timestamp", "desc")
             .onSnapshot((snapshot) => setMessages(snapshot.docs.map((doc) => doc.data())));
-        }
+        }// eslint-disable-next-line
     }, [])
 
     return (

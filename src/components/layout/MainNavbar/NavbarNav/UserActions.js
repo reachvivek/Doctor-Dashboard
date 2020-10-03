@@ -25,6 +25,9 @@ export default function UserActions (props) {
     }
   }
 
+    const refreshPage = e => {
+      window.location.reload();
+    }
 
     const [{user}] = useStateValue();
 
@@ -49,7 +52,7 @@ export default function UserActions (props) {
             <i className="material-icons">&#xE896;</i> Transactions
           </DropdownItem>
           <DropdownItem divider />
-          <DropdownItem tag={Link} to="/" className="text-danger">
+          <DropdownItem type="button" onClick={refreshPage} className="text-danger">
             <i className="material-icons text-danger">&#xE879;</i> Logout
           </DropdownItem>
         </Collapse>

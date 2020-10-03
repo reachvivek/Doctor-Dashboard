@@ -14,6 +14,7 @@ function Chat() {
         const [patient, setPatients] = useState("")
         const [avatar, setAvatar] = useState("")
         const [messages, setMessages] = useState([])
+        // eslint-disable-next-line
         const [{user}, dispatch] = useStateValue()
 
         useEffect(() => {
@@ -53,8 +54,7 @@ function Chat() {
                     <p className="header__patientName">{patient}</p>
                     <p className="header__lastSeen">Last seen {" "}
                     {new Date(
-                        messages[messages.length - 1]?.
-                        timestamp?.toDate()).toUTCString()}
+                        messages[messages.length - 1]?.timestamp?.toDate()).toUTCString()}
                     </p>
                 </div>
 
