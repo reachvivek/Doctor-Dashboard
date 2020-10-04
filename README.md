@@ -1,4 +1,4 @@
-<p align="center"><img src="https://github.com/reachvivek/Doctor-Dashboard/blob/master/src/images/logos/stethoscope.svg" width="200" height="200"></p>
+<p align="center"><img src="https://github.com/reachvivek/Doctor-Dashboard/blob/master/src/images/logos/logo.png?raw=true" width="200" height="200"></p>
 
 <h1 align="center">CHIKITSAK </br>#Microsoft Azure Champions League'20 (Hack-1) </H1>
 <p align="center">
