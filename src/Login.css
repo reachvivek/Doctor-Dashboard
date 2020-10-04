@@ -28,13 +28,13 @@
 .login__container > button {
     margin-top: 50px;
     text-transform: inherit;
-    background-color: #007bff;
+    background-color: #00b8d8;
     color: white;
     outline: 0;
 }
 
 .login__container > button:hover {
-    background-color: #00b8d8;
+    background-color: #17c671;
     color: white;
     outline: 0;
 }

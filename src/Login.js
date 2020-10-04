@@ -1,6 +1,6 @@
 import React from 'react'
 import './Login.css'
-import Logo from "./images/logos/stethoscope.svg" 
+import Logo from "./images/logos/logo.png" 
 import { Button } from '@material-ui/core'
 import {auth, provider } from './firebase';
 import { actionTypes } from './reducer';
