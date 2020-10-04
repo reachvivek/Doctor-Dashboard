@@ -46,9 +46,9 @@ Shiva.propTypes = {
 
 Shiva.defaultProps = {
   patientDetails: {
-    name: "Shiva Prasad",
-    avatar: require("./../../images/avatars/shiva.jpeg"),
-    email: "sivahari00@gmail.com",
+    name: "Jay",
+    avatar: require("./../../images/avatars/jay.jpeg"),
+    email: "jay@gmail.com",
     metaTitle: "Notes",
     metaValue:
       "This patient has been diagnosed with depression"

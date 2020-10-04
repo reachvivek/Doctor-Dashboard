@@ -46,9 +46,9 @@ Akshith.propTypes = {
 
 Akshith.defaultProps = {
   patientDetails: {
-    name: "Akshith Chittiveli",
-    avatar: require("./../../images/avatars/akshith.jpeg"),
-    email: "akshithchittiveli@gmail.com",
+    name: "Alex",
+    avatar: require("./../../images/avatars/alex.jpg"),
+    email: "alex@gmail.com",
     metaTitle: "Notes",
     metaValue:
       "This patient has had a case of wrist fracture last reported"

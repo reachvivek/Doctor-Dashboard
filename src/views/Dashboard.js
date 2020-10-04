@@ -51,7 +51,7 @@ const Dashboard = () => (
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>Rahul</td>
+                  <td>Ronnie</td>
                   <td>Male</td>
                   <td>Cardiologist</td>
                   <td>Experienced a catastrophic heart attack 5 mins ago</td>
@@ -65,7 +65,7 @@ const Dashboard = () => (
                 </tr>
                 <tr>
                   <td>2</td>
-                  <td>Shiva</td>
+                  <td>Sheldon</td>
                   <td>Male</td>
                   <td>Psychologist</td>
                   <td>Can't sleep properly due to stress and work load. Not able to enjoy life!</td>
@@ -79,7 +79,7 @@ const Dashboard = () => (
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>Akshith</td>
+                  <td>Azio</td>
                   <td>Male</td>
                   <td>Orthopaedist</td>
                   <td>Fractures reported in the wrist due to excessive coding on Flutter without pause</td>
@@ -93,7 +93,7 @@ const Dashboard = () => (
                 </tr>
                 <tr>
                   <td>4</td>
-                  <td>Harshita</td>
+                  <td>Henna</td>
                   <td>Female</td>
                   <td>Dermatologist</td>
                   <td>Needs to get rid of Pimples on her skin</td>
@@ -107,7 +107,7 @@ const Dashboard = () => (
                 </tr>
                 <tr>
                   <td>5</td>
-                  <td>Vivek</td>
+                  <td>Drake</td>
                   <td>Male</td>
                   <td>Physician</td>
                   <td>Suspected to be Covid + due to violation of Lockdown norms during Lockdown.</td>

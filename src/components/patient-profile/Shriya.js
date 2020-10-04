@@ -46,9 +46,9 @@ Shriya.propTypes = {
 
 Shriya.defaultProps = {
   patientDetails: {
-    name: "Shriya Siddhartha",
-    avatar: require("./../../images/avatars/shriya.jpeg"),
-    email: "shriyasiddhartha@gmail.com",
+    name: "Helen",
+    avatar: require("./../../images/avatars/helen.jpg"),
+    email: "helen@gmail.com",
     metaTitle: "Notes",
     metaValue:
       "This patient has been diagnosed as Covid +ve"

@@ -2,7 +2,7 @@ import { Avatar, IconButton } from '@material-ui/core';
 import { AttachFile, InsertEmoticon, Mic, MoreVert, SearchOutlined, VideoCall} from '@material-ui/icons';
 import React, { useEffect, useState } from 'react';
 import "./chatstyle.css";
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import db from '../../firebase';
 import { useStateValue } from '../../StateProvider';
 import firebase from "firebase";

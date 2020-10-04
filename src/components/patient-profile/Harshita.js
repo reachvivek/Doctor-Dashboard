@@ -46,9 +46,9 @@ Harshita.propTypes = {
 
 Harshita.defaultProps = {
   patientDetails: {
-    name: "Harshita Chauhan",
-    avatar: require("./../../images/avatars/harshita.jpg"),
-    email: "harshitachauhan@gmail.com",
+    name: "Shelly",
+    avatar: require("./../../images/avatars/shelly.png"),
+    email: "shelly@gmail.com",
     metaTitle: "Notes",
     metaValue:
       "This patient has Type II Acne on her Skin"
