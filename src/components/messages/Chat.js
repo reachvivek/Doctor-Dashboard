@@ -2,7 +2,7 @@ import { Avatar, IconButton } from '@material-ui/core';
 import { AttachFile, InsertEmoticon, Mic, MoreVert, SearchOutlined, VideoCall} from '@material-ui/icons';
 import React, { useEffect, useState } from 'react';
 import "./chatstyle.css";
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import db from '../../firebase';
 import { useStateValue } from '../../StateProvider';
 import firebase from "firebase";
@@ -65,9 +65,10 @@ function Chat() {
                     <IconButton>
                         <AttachFile/>
                     </IconButton>
-                    <IconButton>
+                    <a href="https://desolate-cliffs-58938.herokuapp.com/" target="_blank"><IconButton>
                         <VideoCall/>
                     </IconButton>
+                    </a>
                     <IconButton>
                         <MoreVert/>
                     </IconButton>

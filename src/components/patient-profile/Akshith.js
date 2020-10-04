@@ -7,6 +7,7 @@ import {
   ListGroup,
   ListGroupItem
 } from "shards-react";
+import { Link } from "react-router-dom";
 
 const Akshith = ({ patientDetails }) => (
   <Card small className="mb-4 pt-3">
@@ -21,7 +22,7 @@ const Akshith = ({ patientDetails }) => (
       </div>
       <h4 className="mb-0">{patientDetails.name}</h4>
       <span className="text-muted d-block mb-2">{patientDetails.email}</span>
-      <Button pill outline size="sm" className="mb-2">
+      <Button tag={Link} to="messages/zI8Pb1QtL7yELimxFDxo" pill outline size="sm" className="mb-2">
         <i className="material-icons mr-1">chat</i> Send Message
       </Button>
     </CardHeader>

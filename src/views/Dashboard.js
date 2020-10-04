@@ -1,5 +1,6 @@
 import React from "react";
 import {Button, Container, Row, Col, Card, CardHeader, CardBody } from "shards-react";
+import { Link } from "react-router-dom";
 
 import PageTitle from "../components/common/PageTitle";
 
@@ -57,7 +58,7 @@ const Dashboard = () => (
                   <td>21:30 Hours</td>
                   <td>Yes</td>
                   <td>
-                    <Button outline theme="success" className="mb-2 mr-1">
+                    <Button tag={Link} to="mypatients" outline theme="success" className="mb-2 mr-1">
                       Accept
                     </Button>
                   </td>
@@ -71,7 +72,7 @@ const Dashboard = () => (
                   <td>18:30 Hours</td>
                   <td>No</td>
                   <td>
-                    <Button outline theme="success" className="mb-2 mr-1">
+                    <Button tag={Link} to="mypatients" outline theme="success" className="mb-2 mr-1">
                       Accept
                     </Button>
                   </td>
@@ -85,7 +86,7 @@ const Dashboard = () => (
                   <td>03:30 Hours</td>
                   <td>Yes</td>
                   <td>
-                    <Button outline theme="success" className="mb-2 mr-1">
+                  <Button tag={Link} to="mypatients" outline theme="success" className="mb-2 mr-1">
                       Accept
                     </Button>
                   </td>
@@ -99,7 +100,7 @@ const Dashboard = () => (
                   <td>21:30 Hours</td>
                   <td>Yes</td>
                   <td>
-                    <Button outline theme="success" className="mb-2 mr-1">
+                    <Button tag={Link} to="mypatients" outline theme="success" className="mb-2 mr-1">
                       Accept
                     </Button>
                   </td>
@@ -113,7 +114,7 @@ const Dashboard = () => (
                   <td>14:30 Hours</td>
                   <td>No</td>
                   <td>
-                    <Button outline theme="success" className="mb-2 mr-1">
+                    <Button tag={Link} to="mypatients" outline theme="success" className="mb-2 mr-1">
                       Accept
                     </Button>
                   </td>

@@ -19,6 +19,10 @@
     padding: 0;
 }
 
+.chat__headerRight{
+    outline:0
+}
+
 .chat__header {
     padding: 20px;
     display: flex;
