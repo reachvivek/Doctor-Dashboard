@@ -9,7 +9,7 @@
 
 <h1 align="center">About</H1>
 
-Chikitsak has been made to scale up the existing telemedicine and Patient MIS in rural areas using Azure Services and Serverless Architecture to provide a cost-economic one stop solution which is dependable and truly secure. The objective is to give the citizens a **Live Doctor Interface** which has a **serverless architecture** and can be remotely accessed irrespective of geographic location. 
+Chikitsak has been made to scale up the existing telemedicine and Patient MIS in rural areas using Azure Services and Serverless Architecture to provide a cost-economic one stop solution which is dependable and truly secure. The objective is to give the citizens a **Live Doctor Interface** which has a **serverless architecture** and can be remotely accessed irrespective of patient's geographical location. 
 
 > **Note:** This is ```Not An Open Source Project``` and is intended to be shared only with ```HackerEarth Officials``` & respective organizers of ```#Microsoft Azure Champions League``` for Validation of my Idea Subission and Evaluation Purposes. Please check this link below to better understand the license agreement of this repository: <a target="_blank" href="https://choosealicense.com/no-permission/">
           <p align="center"> <strong>About Proprietary Code & Repository | GitHub</strong> </p> </a> 
